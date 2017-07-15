@@ -1,3 +1,5 @@
+##Read in book from different txt file for training data
+##The function return a big string with all of the book append one after another
 def readin_training_data():
     import os.path
     fcontent = ""
@@ -39,6 +41,7 @@ def readin_training_data():
 
     return fcontent
 
+## this fucntion return the list of the next word with the proabbility of it given a word
 def NextWordProbability(sampletext,word):
     ssplit = sampletext.split(" ")
     preceding_word = []
