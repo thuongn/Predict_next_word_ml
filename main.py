@@ -1,3 +1,44 @@
+def readin_training_data():
+    import os.path
+    fcontent = ""
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "TrainingData/2city10.txt")
+    with open(path, 'r') as content_file:
+        content = content_file.read()
+    fcontent = fcontent + content
+
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "TrainingData/2city11.txt")
+    with open(path, 'r') as content_file:
+        content = content_file.read()
+    fcontent = fcontent + content
+
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "TrainingData/7gabl10.txt")
+    with open(path, 'r') as content_file:
+        content = content_file.read()
+    fcontent = fcontent + content
+
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "TrainingData/80day10.txt")
+    with open(path, 'r') as content_file:
+        content = content_file.read()
+    fcontent = fcontent + content
+
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "TrainingData/2000010.txt")
+    with open(path, 'r') as content_file:
+        content = content_file.read()
+    fcontent = fcontent + content
+
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "TrainingData/abbott-flatland-361.txt")
+    with open(path, 'r') as content_file:
+        content = content_file.read()
+    fcontent = fcontent + content
+
+    return fcontent
+
 def NextWordProbability(sampletext,word):
     ssplit = sampletext.split(" ")
     preceding_word = []
