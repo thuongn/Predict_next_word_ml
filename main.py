@@ -54,3 +54,5 @@ def NextWordProbability(sampletext,word):
     for key, value in rtn.items():
         rtn[key] = rtn[key]*1.00 / tsum
     return rtn
+
+print NextWordProbability(readin_training_data(),"win")
