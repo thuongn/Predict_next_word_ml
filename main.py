@@ -9,4 +9,7 @@ def NextWordProbability(sampletext,word):
                 rtn[ssplit[i+1]] = rtn[ssplit[i+1]] + 1
             else:
                 rtn[ssplit[i+1]] = 1 
+    tsum = sum(rtn.values())
+    for key, value in rtn.items():
+        rtn[key] = rtn[key]*1.00 / tsum
     return rtn
